@@ -59,6 +59,7 @@ public class InboundWebsocketConstants {
 
     public static final String SYNAPSE_SUBPROTOCOL_PREFIX = "synapse";
     public static final String WEBSOCKET_SUBSCRIBER_PATH = "websocket.subscriber.path";
+    public static final String API_PROPERTIES = "API_PROPERTIES";
 
     public static final String BINARY_BUILDER_IMPLEMENTATION = "org.wso2.carbon.relay.BinaryRelayBuilder";
     public static final String TEXT_BUILDER_IMPLEMENTATION = "org.apache.axis2.format.PlainTextBuilder";

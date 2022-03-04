@@ -558,6 +558,8 @@ public class InboundWebsocketSourceHandler extends ChannelInboundHandlerAdapter 
                     .setProperty(InboundWebsocketConstants.WEBSOCKET_OUTFLOW_DISPATCH_FAULT_SEQUENCE, outflowErrorSequence);
         }
         synCtx.setProperty(InboundWebsocketConstants.WEBSOCKET_SUBSCRIBER_PATH, subscriberPath.toString());
+        synCtx.setProperty(InboundWebsocketConstants.API_PROPERTIES, wrappedContext.getChannelHandlerContext().channel()
+                .attr(AttributeKey.valueOf(InboundWebsocketConstants.API_PROPERTIES)).get());
         return synCtx;
     }
 
